@@ -1,0 +1,9 @@
+# Ignore raw dataset
+dataset/raw/
+
+# Ignore processed dataset
+dataset/processed/
+
+# Ignore notebook checkpoint files
+.pre-processing/.ipynb_checkpoints/
+**/.ipynb_checkpoints/
