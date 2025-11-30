@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     combined_data
+Instances:    10000
+Attributes:   6
+              user_rating_encoded
+              genre_encoded
+              members_encoded
+              anime_rating_encoded
+              type
+              episodes_encoded
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+type:
+	TV	-> Short_Series
+	Special	-> Movie/Special
+	Music	-> Movie/Special
+	Movie	-> Movie/Special
+	OVA	-> Short_Series
+	ONA	-> Short_Series
+(6138/10000 instances correct)
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6138               61.38   %
+Incorrectly Classified Instances      3862               38.62   %
+Kappa statistic                          0.34  
+Mean absolute error                      0.1545
+Root mean squared error                  0.393 
+Relative absolute error                 56.9591 %
+Root relative squared error            106.7378 %
+Total Number of Instances            10000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.940    0.667    0.550      0.940    0.694      0.337    0.636     0.545     Short_Series
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.229     Medium_Series
+                 0.793    0.037    0.860      0.793    0.825      0.778    0.878     0.728     Movie/Special
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.060     Long_Series
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.024     Very_Long_Series
+Weighted Avg.    0.614    0.318    ?          0.614    ?          ?        0.648     0.472     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 4368    0  277    0    0 |    a = Short_Series
+ 2278    0    8    0    0 |    b = Medium_Series
+  463    0 1770    0    0 |    c = Movie/Special
+  597    0    3    0    0 |    d = Long_Series
+  236    0    0    0    0 |    e = Very_Long_Series
+

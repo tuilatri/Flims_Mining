@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.ZeroR 
+Relation:     combined_data
+Instances:    10000
+Attributes:   6
+              user_rating_encoded
+              genre_encoded
+              members_encoded
+              anime_rating_encoded
+              type
+              episodes_encoded
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+ZeroR predicts class value: Short_Series
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4645               46.45   %
+Incorrectly Classified Instances      5355               53.55   %
+Kappa statistic                          0     
+Mean absolute error                      0.2712
+Root mean squared error                  0.3682
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances            10000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.465      1.000    0.634      ?        0.499     0.464     Short_Series
+                 0.000    0.000    ?          0.000    ?          ?        0.499     0.228     Medium_Series
+                 0.000    0.000    ?          0.000    ?          ?        0.499     0.223     Movie/Special
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.060     Long_Series
+                 0.000    0.000    ?          0.000    ?          ?        0.495     0.023     Very_Long_Series
+Weighted Avg.    0.465    0.465    ?          0.465    ?          ?        0.499     0.322     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 4645    0    0    0    0 |    a = Short_Series
+ 2286    0    0    0    0 |    b = Medium_Series
+ 2233    0    0    0    0 |    c = Movie/Special
+  600    0    0    0    0 |    d = Long_Series
+  236    0    0    0    0 |    e = Very_Long_Series
+

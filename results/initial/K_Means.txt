@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     combined_data
+Instances:    10000
+Attributes:   6
+              user_rating_encoded
+              genre_encoded
+              type
+              episodes_encoded
+              anime_rating_encoded
+              members_encoded
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 3
+Within cluster sum of squared errors: 22517.0
+
+Initial starting points (random):
+
+Cluster 0: No_Rating,Comedy,TV,Short_Series,High,Medium
+Cluster 1: High,Comedy,OVA,Movie/Special,Average,Medium
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                          Cluster#
+Attribute                  Full Data             0             1
+                           (10000.0)      (7031.0)      (2969.0)
+================================================================
+user_rating_encoded             High          High          High
+genre_encoded                 Action        Action        Action
+type                              TV            TV         Movie
+episodes_encoded        Short_Series  Short_Series Movie/Special
+anime_rating_encoded         Average       Average       Average
+members_encoded                 High          High        Medium
+
+
+
+
+Time taken to build model (full training data) : 0.06 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       7031 ( 70%)
+1       2969 ( 30%)
+

@@ -1,0 +1,370 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     combined_data
+Instances:    10000
+Attributes:   6
+              user_rating_encoded
+              genre_encoded
+              type
+              episodes_encoded
+              anime_rating_encoded
+              members_encoded
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+anime_rating_encoded = High
+|   type = TV
+|   |   genre_encoded = Comedy
+|   |   |   episodes_encoded = Medium_Series: High (376.0/35.0)
+|   |   |   episodes_encoded = Short_Series: High (247.0/69.0)
+|   |   |   episodes_encoded = Movie/Special: High (0.0)
+|   |   |   episodes_encoded = Long_Series
+|   |   |   |   user_rating_encoded = High: High (33.0/12.0)
+|   |   |   |   user_rating_encoded = Average: Medium (10.0/3.0)
+|   |   |   |   user_rating_encoded = No_Rating: High (6.0/3.0)
+|   |   |   |   user_rating_encoded = Low: High (0.0)
+|   |   |   episodes_encoded = Very_Long_Series: Medium (7.0)
+|   |   genre_encoded = Adventure: High (122.0/16.0)
+|   |   genre_encoded = Action: High (1071.0/65.0)
+|   |   genre_encoded = Hentai: High (0.0)
+|   |   genre_encoded = Mecha: High (0.0)
+|   |   genre_encoded = Drama
+|   |   |   episodes_encoded = Medium_Series: High (99.0/2.0)
+|   |   |   episodes_encoded = Short_Series: High (126.0/13.0)
+|   |   |   episodes_encoded = Movie/Special: High (0.0)
+|   |   |   episodes_encoded = Long_Series: Medium (10.0/4.0)
+|   |   |   episodes_encoded = Very_Long_Series: Medium (2.0)
+|   |   genre_encoded = Mystery: High (121.0)
+|   |   genre_encoded = Horror: High (17.0/3.0)
+|   |   genre_encoded = Fantasy: Medium (3.0)
+|   |   genre_encoded = Dementia: High (0.0)
+|   |   genre_encoded = Romance: High (43.0/2.0)
+|   |   genre_encoded = Ecchi: High (19.0)
+|   |   genre_encoded = Shounen: High (0.0)
+|   |   genre_encoded = Sci-Fi: High (26.0)
+|   |   genre_encoded = Game: Medium (14.0)
+|   |   genre_encoded = School: High (0.0)
+|   |   genre_encoded = Music: High (0.0)
+|   |   genre_encoded = Seinen: High (0.0)
+|   |   genre_encoded = Demons: Medium (5.0)
+|   |   genre_encoded = Josei: High (10.0)
+|   |   genre_encoded = Slice of Life: High (0.0)
+|   |   genre_encoded = Magic: High (0.0)
+|   |   genre_encoded = Harem: High (0.0)
+|   |   genre_encoded = Historical: High (0.0)
+|   |   genre_encoded = Psychological
+|   |   |   episodes_encoded = Medium_Series: Medium (3.0)
+|   |   |   episodes_encoded = Short_Series: High (9.0/2.0)
+|   |   |   episodes_encoded = Movie/Special: High (0.0)
+|   |   |   episodes_encoded = Long_Series: High (0.0)
+|   |   |   episodes_encoded = Very_Long_Series: High (0.0)
+|   |   genre_encoded = Kids: Medium (2.0)
+|   |   genre_encoded = Military: High (0.0)
+|   |   genre_encoded = Yaoi: High (0.0)
+|   |   genre_encoded = Shoujo: High (0.0)
+|   |   genre_encoded = Sports: High (0.0)
+|   |   genre_encoded = Cars: Medium (1.0)
+|   |   genre_encoded = Parody: High (0.0)
+|   |   genre_encoded = Super Power: High (0.0)
+|   |   genre_encoded = Supernatural: High (0.0)
+|   type = OVA
+|   |   genre_encoded = Comedy: Medium (26.0/6.0)
+|   |   genre_encoded = Adventure: High (9.0/1.0)
+|   |   genre_encoded = Action: High (76.0/34.0)
+|   |   genre_encoded = Hentai: Medium (0.0)
+|   |   genre_encoded = Mecha: Medium (0.0)
+|   |   genre_encoded = Drama: Medium (7.0/1.0)
+|   |   genre_encoded = Mystery: Medium (2.0)
+|   |   genre_encoded = Horror: Medium (0.0)
+|   |   genre_encoded = Fantasy: Medium (0.0)
+|   |   genre_encoded = Dementia: Medium (0.0)
+|   |   genre_encoded = Romance: Medium (2.0)
+|   |   genre_encoded = Ecchi: Medium (0.0)
+|   |   genre_encoded = Shounen: Medium (0.0)
+|   |   genre_encoded = Sci-Fi: Medium (0.0)
+|   |   genre_encoded = Game: Medium (0.0)
+|   |   genre_encoded = School: Medium (0.0)
+|   |   genre_encoded = Music: Medium (0.0)
+|   |   genre_encoded = Seinen: Medium (0.0)
+|   |   genre_encoded = Demons: Medium (0.0)
+|   |   genre_encoded = Josei: Medium (0.0)
+|   |   genre_encoded = Slice of Life: Medium (0.0)
+|   |   genre_encoded = Magic: Medium (0.0)
+|   |   genre_encoded = Harem: Medium (0.0)
+|   |   genre_encoded = Historical: Medium (0.0)
+|   |   genre_encoded = Psychological: Medium (0.0)
+|   |   genre_encoded = Kids: Medium (0.0)
+|   |   genre_encoded = Military: Medium (0.0)
+|   |   genre_encoded = Yaoi: Medium (0.0)
+|   |   genre_encoded = Shoujo: Medium (0.0)
+|   |   genre_encoded = Sports: Medium (0.0)
+|   |   genre_encoded = Cars: Medium (0.0)
+|   |   genre_encoded = Parody: Medium (0.0)
+|   |   genre_encoded = Super Power: Medium (0.0)
+|   |   genre_encoded = Supernatural: Medium (0.0)
+|   type = Movie: High (556.0/156.0)
+|   type = Special
+|   |   genre_encoded = Comedy: Medium (11.0/4.0)
+|   |   genre_encoded = Adventure: Medium (9.0)
+|   |   genre_encoded = Action: High (38.0/15.0)
+|   |   genre_encoded = Hentai: High (0.0)
+|   |   genre_encoded = Mecha: Medium (2.0)
+|   |   genre_encoded = Drama: High (26.0/2.0)
+|   |   genre_encoded = Mystery: High (0.0)
+|   |   genre_encoded = Horror: High (0.0)
+|   |   genre_encoded = Fantasy: High (0.0)
+|   |   genre_encoded = Dementia: High (0.0)
+|   |   genre_encoded = Romance: High (0.0)
+|   |   genre_encoded = Ecchi: High (0.0)
+|   |   genre_encoded = Shounen: High (0.0)
+|   |   genre_encoded = Sci-Fi: High (16.0/1.0)
+|   |   genre_encoded = Game: Medium (1.0)
+|   |   genre_encoded = School: High (0.0)
+|   |   genre_encoded = Music: High (0.0)
+|   |   genre_encoded = Seinen: High (0.0)
+|   |   genre_encoded = Demons: High (0.0)
+|   |   genre_encoded = Josei: Medium (5.0)
+|   |   genre_encoded = Slice of Life: High (0.0)
+|   |   genre_encoded = Magic: High (0.0)
+|   |   genre_encoded = Harem: High (0.0)
+|   |   genre_encoded = Historical: High (0.0)
+|   |   genre_encoded = Psychological: High (0.0)
+|   |   genre_encoded = Kids: High (0.0)
+|   |   genre_encoded = Military: High (0.0)
+|   |   genre_encoded = Yaoi: High (0.0)
+|   |   genre_encoded = Shoujo: High (0.0)
+|   |   genre_encoded = Sports: High (0.0)
+|   |   genre_encoded = Cars: High (0.0)
+|   |   genre_encoded = Parody: High (0.0)
+|   |   genre_encoded = Super Power: High (0.0)
+|   |   genre_encoded = Supernatural: High (0.0)
+|   type = ONA: Medium (7.0)
+|   type = Music: Medium (4.0)
+anime_rating_encoded = Average
+|   type = TV
+|   |   genre_encoded = Comedy
+|   |   |   episodes_encoded = Medium_Series: High (279.0/119.0)
+|   |   |   episodes_encoded = Short_Series: High (1246.0/518.0)
+|   |   |   episodes_encoded = Movie/Special: High (0.0)
+|   |   |   episodes_encoded = Long_Series: Medium (29.0/11.0)
+|   |   |   episodes_encoded = Very_Long_Series: High (8.0/3.0)
+|   |   genre_encoded = Adventure: Medium (277.0/108.0)
+|   |   genre_encoded = Action: High (1973.0/703.0)
+|   |   genre_encoded = Hentai: High (0.0)
+|   |   genre_encoded = Mecha: High (0.0)
+|   |   genre_encoded = Drama
+|   |   |   episodes_encoded = Medium_Series: Medium (46.0/10.0)
+|   |   |   episodes_encoded = Short_Series: High (196.0/92.0)
+|   |   |   episodes_encoded = Movie/Special: Medium (0.0)
+|   |   |   episodes_encoded = Long_Series: Medium (22.0/7.0)
+|   |   |   episodes_encoded = Very_Long_Series: Medium (0.0)
+|   |   genre_encoded = Mystery
+|   |   |   episodes_encoded = Medium_Series: High (19.0/5.0)
+|   |   |   episodes_encoded = Short_Series: Medium (20.0/7.0)
+|   |   |   episodes_encoded = Movie/Special: High (0.0)
+|   |   |   episodes_encoded = Long_Series: High (0.0)
+|   |   |   episodes_encoded = Very_Long_Series: High (0.0)
+|   |   genre_encoded = Horror: High (71.0/11.0)
+|   |   genre_encoded = Fantasy
+|   |   |   episodes_encoded = Medium_Series: Medium (3.0)
+|   |   |   episodes_encoded = Short_Series: High (44.0/21.0)
+|   |   |   episodes_encoded = Movie/Special: High (0.0)
+|   |   |   episodes_encoded = Long_Series: Medium (1.0)
+|   |   |   episodes_encoded = Very_Long_Series: High (0.0)
+|   |   genre_encoded = Dementia: High (13.0/4.0)
+|   |   genre_encoded = Romance
+|   |   |   user_rating_encoded = High: High (10.0/2.0)
+|   |   |   user_rating_encoded = Average: Medium (8.0/2.0)
+|   |   |   user_rating_encoded = No_Rating: High (5.0)
+|   |   |   user_rating_encoded = Low: High (3.0)
+|   |   genre_encoded = Ecchi: Medium (16.0)
+|   |   genre_encoded = Shounen: Medium (6.0/1.0)
+|   |   genre_encoded = Sci-Fi
+|   |   |   episodes_encoded = Medium_Series: Medium (3.0)
+|   |   |   episodes_encoded = Short_Series: Low (2.0)
+|   |   |   episodes_encoded = Movie/Special: Medium (0.0)
+|   |   |   episodes_encoded = Long_Series: Medium (0.0)
+|   |   |   episodes_encoded = Very_Long_Series: Medium (0.0)
+|   |   genre_encoded = Game: Medium (8.0)
+|   |   genre_encoded = School: Medium (4.0)
+|   |   genre_encoded = Music: High (13.0/7.0)
+|   |   genre_encoded = Seinen: Medium (3.0)
+|   |   genre_encoded = Demons
+|   |   |   episodes_encoded = Medium_Series: Medium (1.0)
+|   |   |   episodes_encoded = Short_Series: Medium (4.0)
+|   |   |   episodes_encoded = Movie/Special: High (0.0)
+|   |   |   episodes_encoded = Long_Series: High (18.0/6.0)
+|   |   |   episodes_encoded = Very_Long_Series: High (0.0)
+|   |   genre_encoded = Josei: High (0.0)
+|   |   genre_encoded = Slice of Life: High (0.0)
+|   |   genre_encoded = Magic
+|   |   |   episodes_encoded = Medium_Series: High (8.0)
+|   |   |   episodes_encoded = Short_Series: Medium (4.0/1.0)
+|   |   |   episodes_encoded = Movie/Special: High (0.0)
+|   |   |   episodes_encoded = Long_Series: High (0.0)
+|   |   |   episodes_encoded = Very_Long_Series: High (0.0)
+|   |   genre_encoded = Harem: High (19.0/9.0)
+|   |   genre_encoded = Historical: Medium (10.0)
+|   |   genre_encoded = Psychological: High (0.0)
+|   |   genre_encoded = Kids: High (0.0)
+|   |   genre_encoded = Military: High (10.0/5.0)
+|   |   genre_encoded = Yaoi: High (0.0)
+|   |   genre_encoded = Shoujo: High (0.0)
+|   |   genre_encoded = Sports: Medium (3.0)
+|   |   genre_encoded = Cars: Low (2.0)
+|   |   genre_encoded = Parody: High (0.0)
+|   |   genre_encoded = Super Power: High (0.0)
+|   |   genre_encoded = Supernatural: High (0.0)
+|   type = OVA
+|   |   genre_encoded = Comedy: Medium (283.0/53.0)
+|   |   genre_encoded = Adventure: Medium (48.0/18.0)
+|   |   genre_encoded = Action: Medium (229.0/72.0)
+|   |   genre_encoded = Hentai: Low (81.0/12.0)
+|   |   genre_encoded = Mecha: Low (4.0)
+|   |   genre_encoded = Drama: Medium (56.0/10.0)
+|   |   genre_encoded = Mystery: Medium (3.0)
+|   |   genre_encoded = Horror: Medium (12.0/5.0)
+|   |   genre_encoded = Fantasy: Medium (16.0/2.0)
+|   |   genre_encoded = Dementia: Medium (1.0)
+|   |   genre_encoded = Romance: Medium (9.0/2.0)
+|   |   genre_encoded = Ecchi: Medium (15.0/1.0)
+|   |   genre_encoded = Shounen: Medium (0.0)
+|   |   genre_encoded = Sci-Fi: Low (3.0)
+|   |   genre_encoded = Game: Medium (1.0)
+|   |   genre_encoded = School: Medium (1.0)
+|   |   genre_encoded = Music: Medium (2.0)
+|   |   genre_encoded = Seinen: Medium (0.0)
+|   |   genre_encoded = Demons: Low (4.0)
+|   |   genre_encoded = Josei: Medium (0.0)
+|   |   genre_encoded = Slice of Life: Medium (5.0/1.0)
+|   |   genre_encoded = Magic: Low (2.0)
+|   |   genre_encoded = Harem: Low (3.0)
+|   |   genre_encoded = Historical: Medium (0.0)
+|   |   genre_encoded = Psychological: Medium (0.0)
+|   |   genre_encoded = Kids: Low (1.0)
+|   |   genre_encoded = Military: Medium (0.0)
+|   |   genre_encoded = Yaoi: Low (2.0)
+|   |   genre_encoded = Shoujo: Medium (0.0)
+|   |   genre_encoded = Sports: Medium (0.0)
+|   |   genre_encoded = Cars: Medium (0.0)
+|   |   genre_encoded = Parody: Low (1.0)
+|   |   genre_encoded = Super Power: Medium (0.0)
+|   |   genre_encoded = Supernatural: Medium (0.0)
+|   type = Movie: Medium (757.0/195.0)
+|   type = Special: Medium (593.0/132.0)
+|   type = ONA: Medium (116.0/31.0)
+|   type = Music
+|   |   genre_encoded = Comedy: Low (0.0)
+|   |   genre_encoded = Adventure: Low (1.0)
+|   |   genre_encoded = Action: Medium (10.0/3.0)
+|   |   genre_encoded = Hentai: Low (0.0)
+|   |   genre_encoded = Mecha: Medium (2.0)
+|   |   genre_encoded = Drama: Low (2.0)
+|   |   genre_encoded = Mystery: Low (0.0)
+|   |   genre_encoded = Horror: Low (0.0)
+|   |   genre_encoded = Fantasy: Low (1.0)
+|   |   genre_encoded = Dementia: Low (0.0)
+|   |   genre_encoded = Romance: Low (0.0)
+|   |   genre_encoded = Ecchi: Medium (4.0)
+|   |   genre_encoded = Shounen: Low (0.0)
+|   |   genre_encoded = Sci-Fi: Low (0.0)
+|   |   genre_encoded = Game: Low (0.0)
+|   |   genre_encoded = School: Low (0.0)
+|   |   genre_encoded = Music: Low (17.0/4.0)
+|   |   genre_encoded = Seinen: Low (0.0)
+|   |   genre_encoded = Demons: Low (0.0)
+|   |   genre_encoded = Josei: Low (0.0)
+|   |   genre_encoded = Slice of Life: Low (0.0)
+|   |   genre_encoded = Magic: Low (0.0)
+|   |   genre_encoded = Harem: Low (0.0)
+|   |   genre_encoded = Historical: Low (0.0)
+|   |   genre_encoded = Psychological: Low (0.0)
+|   |   genre_encoded = Kids: Low (0.0)
+|   |   genre_encoded = Military: Low (0.0)
+|   |   genre_encoded = Yaoi: Low (0.0)
+|   |   genre_encoded = Shoujo: Low (0.0)
+|   |   genre_encoded = Sports: Low (0.0)
+|   |   genre_encoded = Cars: Low (0.0)
+|   |   genre_encoded = Parody: Low (0.0)
+|   |   genre_encoded = Super Power: Low (0.0)
+|   |   genre_encoded = Supernatural: Low (0.0)
+anime_rating_encoded = Low
+|   episodes_encoded = Medium_Series: Low (1.0)
+|   episodes_encoded = Short_Series
+|   |   genre_encoded = Comedy: Low (9.0/4.0)
+|   |   genre_encoded = Adventure: Medium (0.0)
+|   |   genre_encoded = Action: Medium (4.0/1.0)
+|   |   genre_encoded = Hentai: Medium (0.0)
+|   |   genre_encoded = Mecha: Medium (0.0)
+|   |   genre_encoded = Drama: High (5.0)
+|   |   genre_encoded = Mystery: Medium (0.0)
+|   |   genre_encoded = Horror: Medium (0.0)
+|   |   genre_encoded = Fantasy: Medium (7.0)
+|   |   genre_encoded = Dementia: Medium (0.0)
+|   |   genre_encoded = Romance: Medium (5.0)
+|   |   genre_encoded = Ecchi: Medium (0.0)
+|   |   genre_encoded = Shounen: Medium (0.0)
+|   |   genre_encoded = Sci-Fi: Medium (0.0)
+|   |   genre_encoded = Game: Medium (0.0)
+|   |   genre_encoded = School: Medium (0.0)
+|   |   genre_encoded = Music: Low (1.0)
+|   |   genre_encoded = Seinen: Medium (0.0)
+|   |   genre_encoded = Demons: Medium (0.0)
+|   |   genre_encoded = Josei: Medium (0.0)
+|   |   genre_encoded = Slice of Life: Low (1.0)
+|   |   genre_encoded = Magic: Medium (0.0)
+|   |   genre_encoded = Harem: High (1.0)
+|   |   genre_encoded = Historical: Medium (0.0)
+|   |   genre_encoded = Psychological: Medium (0.0)
+|   |   genre_encoded = Kids: Medium (0.0)
+|   |   genre_encoded = Military: Medium (0.0)
+|   |   genre_encoded = Yaoi: Medium (0.0)
+|   |   genre_encoded = Shoujo: Medium (0.0)
+|   |   genre_encoded = Sports: Medium (0.0)
+|   |   genre_encoded = Cars: Medium (0.0)
+|   |   genre_encoded = Parody: Medium (0.0)
+|   |   genre_encoded = Super Power: Medium (0.0)
+|   |   genre_encoded = Supernatural: Medium (0.0)
+|   episodes_encoded = Movie/Special: Low (95.0/22.0)
+|   episodes_encoded = Long_Series: Low (0.0)
+|   episodes_encoded = Very_Long_Series: Low (0.0)
+
+Number of Leaves  : 	294
+
+Size of the tree : 	317
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7234               72.34   %
+Incorrectly Classified Instances      2766               27.66   %
+Kappa statistic                          0.4596
+Mean absolute error                      0.2505
+Root mean squared error                  0.3565
+Relative absolute error                 68.6227 %
+Root relative squared error             83.4502 %
+Total Number of Instances            10000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.930    0.425    0.718      0.930    0.811      0.548    0.836     0.838     High
+                 0.284    0.005    0.789      0.284    0.418      0.456    0.874     0.459     Low
+                 0.514    0.125    0.732      0.514    0.604      0.424    0.778     0.691     Medium
+Weighted Avg.    0.723    0.279    0.728      0.723    0.703      0.493    0.815     0.755     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 5005    0  374 |    a = High
+   75  180  378 |    b = Low
+ 1891   48 2049 |    c = Medium
+

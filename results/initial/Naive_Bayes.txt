@@ -1,0 +1,120 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     combined_data
+Instances:    10000
+Attributes:   6
+              user_rating_encoded
+              genre_encoded
+              type
+              episodes_encoded
+              anime_rating_encoded
+              members_encoded
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                        Class
+Attribute                High    Low Medium
+                       (0.54) (0.06)  (0.4)
+============================================
+user_rating_encoded
+  High                  3104.0  181.0 1664.0
+  Average               1147.0  211.0 1188.0
+  No_Rating              890.0  158.0  819.0
+  Low                    242.0   87.0  321.0
+  [total]               5383.0  637.0 3992.0
+
+genre_encoded
+  Comedy                1537.0  146.0 1357.0
+  Adventure              326.0   92.0  485.0
+  Action                2591.0  163.0 1423.0
+  Hentai                   1.0   87.0   17.0
+  Mecha                    1.0    9.0   18.0
+  Drama                  443.0   54.0  295.0
+  Mystery                143.0    1.0   43.0
+  Horror                  79.0    3.0   43.0
+  Fantasy                 44.0   12.0   62.0
+  Dementia                40.0    4.0    6.0
+  Romance                 59.0    6.0   45.0
+  Ecchi                   20.0    6.0   39.0
+  Shounen                  1.0    3.0    7.0
+  Sci-Fi                  49.0    7.0   17.0
+  Game                     1.0    1.0   25.0
+  School                   1.0    2.0   10.0
+  Music                    7.0   20.0   18.0
+  Seinen                   1.0    1.0    4.0
+  Demons                  13.0    6.0   20.0
+  Josei                   11.0    1.0    6.0
+  Slice of Life            1.0    3.0    8.0
+  Magic                    9.0    6.0    6.0
+  Harem                   12.0    6.0   16.0
+  Historical               1.0    4.0   13.0
+  Psychological            8.0    1.0    9.0
+  Kids                     1.0    4.0    4.0
+  Military                 6.0    3.0   10.0
+  Yaoi                     1.0    3.0    1.0
+  Shoujo                   1.0    2.0    6.0
+  Sports                   1.0    1.0    4.0
+  Cars                     1.0    4.0    2.0
+  Parody                   1.0    2.0    1.0
+  Super Power              1.0    2.0    1.0
+  Supernatural             1.0    2.0    1.0
+  [total]               5413.0  667.0 4022.0
+
+type
+  TV                    4639.0  148.0 2039.0
+  OVA                    106.0  255.0  613.0
+  Movie                  534.0   68.0  719.0
+  Special                 87.0  121.0  507.0
+  ONA                     18.0   22.0   94.0
+  Music                    1.0   25.0   22.0
+  [total]               5385.0  639.0 3994.0
+
+episodes_encoded
+  Medium_Series         1663.0   39.0  525.0
+  Short_Series          2436.0   60.0 1272.0
+  Movie/Special          742.0  487.0 1951.0
+  Long_Series            356.0   50.0  207.0
+  Very_Long_Series       187.0    2.0   38.0
+  [total]               5384.0  638.0 3993.0
+
+anime_rating_encoded
+  High                  2631.0    6.0  545.0
+  Average               2744.0  547.0 3404.0
+  Low                      7.0   83.0   42.0
+  [total]               5382.0  636.0 3991.0
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6911               69.11   %
+Incorrectly Classified Instances      3089               30.89   %
+Kappa statistic                          0.4027
+Mean absolute error                      0.2509
+Root mean squared error                  0.3746
+Relative absolute error                 68.7246 %
+Root relative squared error             87.6664 %
+Total Number of Instances            10000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.873    0.432    0.702      0.873    0.778      0.468    0.821     0.829     High
+                 0.302    0.008    0.710      0.302    0.424      0.442    0.880     0.443     Low
+                 0.507    0.169    0.665      0.507    0.576      0.360    0.755     0.640     Medium
+Weighted Avg.    0.691    0.300    0.688      0.691    0.675      0.423    0.798     0.729     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 4697    0  682 |    a = High
+  107  191  335 |    b = Low
+ 1887   78 2023 |    c = Medium
+
