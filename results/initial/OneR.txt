@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     combined_data
+Instances:    10000
+Attributes:   6
+              user_rating_encoded
+              genre_encoded
+              type
+              episodes_encoded
+              anime_rating_encoded
+              members_encoded
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+type:
+	TV	-> High
+	OVA	-> Medium
+	Movie	-> Medium
+	Special	-> Medium
+	ONA	-> Medium
+	Music	-> Low
+(6591/10000 instances correct)
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6587               65.87   %
+Incorrectly Classified Instances      3413               34.13   %
+Kappa statistic                          0.3276
+Mean absolute error                      0.2275
+Root mean squared error                  0.477 
+Relative absolute error                 62.3203 %
+Root relative squared error            111.6466 %
+Total Number of Instances            10000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.862    0.473    0.680      0.862    0.760      0.417    0.695     0.660     High
+                 0.030    0.002    0.487      0.030    0.057      0.109    0.514     0.076     Low
+                 0.484    0.201    0.615      0.484    0.542      0.299    0.642     0.503     Medium
+Weighted Avg.    0.659    0.335    0.642      0.659    0.629      0.350    0.662     0.561     
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 4638    0  741 |    a = High
+  147   19  467 |    b = Low
+ 2038   20 1930 |    c = Medium
+
