@@ -1,0 +1,113 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     combined_data
+Instances:    10000
+Attributes:   6
+              user_rating_encoded
+              genre_encoded
+              members_encoded
+              anime_rating_encoded
+              type
+              episodes_encoded
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                  Class
+Attribute                  Short_Series    Medium_Series    Movie/Special      Long_Series Very_Long_Series
+                                 (0.46)           (0.23)           (0.22)           (0.06)           (0.02)
+============================================================================================================
+user_rating_encoded
+  0                                903.0            388.0            518.0            117.0             36.0
+  1                                 40.0             15.0             30.0              6.0              4.0
+  2                                255.0             66.0            122.0             33.0             11.0
+  3                               1362.0            455.0            567.0            130.0             54.0
+  4                               1640.0           1002.0            736.0            224.0             89.0
+  5                                451.0            366.0            266.0             96.0             48.0
+  [total]                         4651.0           2292.0           2239.0            606.0            242.0
+
+genre_encoded
+  0.00                              11.0              4.0             83.0             24.0             23.0
+  1.00                             836.0            352.0            195.0             27.0             18.0
+  2.00                             565.0            572.0            533.0             98.0             12.0
+  3.00                              74.0              1.0             26.0              1.0              1.0
+  4.00                             257.0            147.0            218.0             56.0              1.0
+  5.00                              47.0             12.0             39.0              2.0              1.0
+  6.00                              82.0              8.0             35.0             11.0              1.0
+  7.00                            2256.0            752.0            687.0            171.0            120.0
+  8.00                              66.0            131.0             60.0             35.0             10.0
+  9.00                             461.0            317.0            367.0            185.0             59.0
+  [total]                         4655.0           2296.0           2243.0            610.0            246.0
+
+members_encoded
+  1.00                             128.0             13.0            164.0             29.0              2.0
+  2.00                             420.0            104.0            393.0             59.0              4.0
+  3.00                             643.0            182.0            602.0             62.0             14.0
+  4.00                             912.0            320.0            526.0             99.0             24.0
+  5.00                            1189.0            431.0            382.0            110.0             20.0
+  6.00                            1139.0            893.0            172.0             70.0            103.0
+  7.00                             221.0            350.0              1.0            178.0             76.0
+  [total]                         4652.0           2293.0           2240.0            607.0            243.0
+
+anime_rating_encoded
+  0.00                               1.0              1.0              3.0              1.0              1.0
+  1.00                              12.0              1.0              5.0              1.0              1.0
+  2.00                             287.0             10.0            134.0              9.0              1.0
+  3.00                            1993.0            447.0            891.0            127.0             29.0
+  4.00                            2156.0           1480.0           1041.0            305.0            189.0
+  5.00                             201.0            304.0            157.0            131.0              3.0
+  6.00                               2.0             50.0              9.0             33.0             19.0
+  [total]                         4652.0           2293.0           2240.0            607.0            243.0
+
+type
+  TV                              3754.0           2251.0              1.0            585.0            236.0
+  Special                          259.0              9.0            428.0              4.0              1.0
+  Music                              2.0              1.0             33.0              1.0              1.0
+  Movie                             19.0              1.0           1312.0              1.0              1.0
+  OVA                              572.0              8.0            439.0              2.0              2.0
+  ONA                               45.0             22.0             26.0             13.0              1.0
+  [total]                         4651.0           2292.0           2239.0            606.0            242.0
+
+
+
+Time taken to build model: 0.12 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+=== Summary ===
+
+Correctly Classified Instances        6391               63.91   %
+Incorrectly Classified Instances      3609               36.09   %
+Kappa statistic                          0.4572
+Mean absolute error                      0.1718
+Root mean squared error                  0.3021
+Relative absolute error                 63.3415 %
+Root relative squared error             82.0365 %
+Total Number of Instances            10000     
+
+=== Detailed Accuracy By Class ===
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.659    0.294    0.661      0.659    0.660      0.366    0.773     0.720     Short_Series
+                 0.567    0.180    0.482      0.567    0.521      0.366    0.807     0.529     Medium_Series
+                 0.886    0.079    0.763      0.886    0.820      0.767    0.978     0.926     Movie/Special
+                 0.078    0.003    0.618      0.078    0.139      0.206    0.851     0.311     Long_Series
+                 0.025    0.000    0.857      0.025    0.049      0.145    0.885     0.208     Very_Long_Series
+Weighted Avg.    0.639    0.195    0.645      0.639    0.618      0.441    0.834     0.686     
+
+=== Confusion Matrix ===
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 3063  993  588    1    0 |    a = Short_Series
+  944 1296   22   24    0 |    b = Medium_Series
+  254    0 1979    0    0 |    c = Movie/Special
+  302  245    5   47    1 |    d = Long_Series
+   72  153    1    4    6 |    e = Very_Long_Series
+

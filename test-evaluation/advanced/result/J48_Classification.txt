@@ -1,0 +1,422 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     combined_data
+Instances:    10000
+Attributes:   6
+              user_rating_encoded
+              genre_encoded
+              members_encoded
+              anime_rating_encoded
+              type
+              episodes_encoded
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+type = TV
+|   anime_rating_encoded = 0.00: Short_Series (0.0)
+|   anime_rating_encoded = 1.00: Short_Series (5.0)
+|   anime_rating_encoded = 2.00: Short_Series (187.0/16.0)
+|   anime_rating_encoded = 3.00
+|   |   genre_encoded = 0.00
+|   |   |   members_encoded = 1.00: Long_Series (1.0)
+|   |   |   members_encoded = 2.00: Medium_Series (3.0)
+|   |   |   members_encoded = 3.00: Very_Long_Series (3.0/1.0)
+|   |   |   members_encoded = 4.00: Very_Long_Series (6.0)
+|   |   |   members_encoded = 5.00: Long_Series (6.0)
+|   |   |   members_encoded = 6.00: Very_Long_Series (14.0)
+|   |   |   members_encoded = 7.00: Very_Long_Series (0.0)
+|   |   genre_encoded = 1.00: Short_Series (286.0/41.0)
+|   |   genre_encoded = 2.00: Short_Series (363.0/114.0)
+|   |   genre_encoded = 3.00: Short_Series (0.0)
+|   |   genre_encoded = 4.00: Short_Series (95.0/36.0)
+|   |   genre_encoded = 5.00: Short_Series (9.0)
+|   |   genre_encoded = 6.00
+|   |   |   members_encoded = 1.00: Short_Series (0.0)
+|   |   |   members_encoded = 2.00: Long_Series (4.0/2.0)
+|   |   |   members_encoded = 3.00: Short_Series (0.0)
+|   |   |   members_encoded = 4.00: Short_Series (6.0)
+|   |   |   members_encoded = 5.00: Short_Series (0.0)
+|   |   |   members_encoded = 6.00: Short_Series (0.0)
+|   |   |   members_encoded = 7.00: Short_Series (0.0)
+|   |   genre_encoded = 7.00: Short_Series (1007.0/173.0)
+|   |   genre_encoded = 8.00: Short_Series (59.0/30.0)
+|   |   genre_encoded = 9.00
+|   |   |   members_encoded = 1.00: Short_Series (6.0/3.0)
+|   |   |   members_encoded = 2.00
+|   |   |   |   user_rating_encoded = 0: Medium_Series (5.0/1.0)
+|   |   |   |   user_rating_encoded = 1: Medium_Series (0.0)
+|   |   |   |   user_rating_encoded = 2: Long_Series (2.0)
+|   |   |   |   user_rating_encoded = 3: Medium_Series (11.0/5.0)
+|   |   |   |   user_rating_encoded = 4: Short_Series (6.0/3.0)
+|   |   |   |   user_rating_encoded = 5: Long_Series (6.0/1.0)
+|   |   |   members_encoded = 3.00: Short_Series (55.0/27.0)
+|   |   |   members_encoded = 4.00: Short_Series (75.0/36.0)
+|   |   |   members_encoded = 5.00: Short_Series (74.0/28.0)
+|   |   |   members_encoded = 6.00: Long_Series (26.0/5.0)
+|   |   |   members_encoded = 7.00: Medium_Series (16.0)
+|   anime_rating_encoded = 4.00
+|   |   genre_encoded = 0.00: Long_Series (13.0)
+|   |   genre_encoded = 1.00
+|   |   |   members_encoded = 1.00: Long_Series (2.0/1.0)
+|   |   |   members_encoded = 2.00: Short_Series (9.0/5.0)
+|   |   |   members_encoded = 3.00: Short_Series (29.0/6.0)
+|   |   |   members_encoded = 4.00: Short_Series (99.0/7.0)
+|   |   |   members_encoded = 5.00: Short_Series (207.0/78.0)
+|   |   |   members_encoded = 6.00: Short_Series (287.0/119.0)
+|   |   |   members_encoded = 7.00: Medium_Series (62.0)
+|   |   genre_encoded = 2.00: Medium_Series (533.0/211.0)
+|   |   genre_encoded = 3.00: Short_Series (0.0)
+|   |   genre_encoded = 4.00
+|   |   |   members_encoded = 1.00: Medium_Series (1.0)
+|   |   |   members_encoded = 2.00
+|   |   |   |   user_rating_encoded = 0: Long_Series (3.0/1.0)
+|   |   |   |   user_rating_encoded = 1: Medium_Series (0.0)
+|   |   |   |   user_rating_encoded = 2: Medium_Series (0.0)
+|   |   |   |   user_rating_encoded = 3: Short_Series (4.0/2.0)
+|   |   |   |   user_rating_encoded = 4: Medium_Series (1.0)
+|   |   |   |   user_rating_encoded = 5: Medium_Series (0.0)
+|   |   |   members_encoded = 3.00: Short_Series (16.0/8.0)
+|   |   |   members_encoded = 4.00: Short_Series (77.0/29.0)
+|   |   |   members_encoded = 5.00: Short_Series (59.0/17.0)
+|   |   |   members_encoded = 6.00: Medium_Series (68.0/31.0)
+|   |   |   members_encoded = 7.00: Short_Series (0.0)
+|   |   genre_encoded = 5.00: Short_Series (22.0/2.0)
+|   |   genre_encoded = 6.00
+|   |   |   members_encoded = 1.00: Short_Series (0.0)
+|   |   |   members_encoded = 2.00: Short_Series (0.0)
+|   |   |   members_encoded = 3.00: Short_Series (0.0)
+|   |   |   members_encoded = 4.00: Long_Series (3.0/1.0)
+|   |   |   members_encoded = 5.00: Short_Series (0.0)
+|   |   |   members_encoded = 6.00: Short_Series (7.0)
+|   |   |   members_encoded = 7.00: Short_Series (0.0)
+|   |   genre_encoded = 7.00: Short_Series (1603.0/717.0)
+|   |   genre_encoded = 8.00: Medium_Series (94.0/19.0)
+|   |   genre_encoded = 9.00
+|   |   |   members_encoded = 1.00: Long_Series (1.0)
+|   |   |   members_encoded = 2.00: Medium_Series (5.0/3.0)
+|   |   |   members_encoded = 3.00: Medium_Series (19.0/7.0)
+|   |   |   members_encoded = 4.00: Medium_Series (83.0/45.0)
+|   |   |   members_encoded = 5.00: Short_Series (48.0/18.0)
+|   |   |   members_encoded = 6.00: Short_Series (280.0/146.0)
+|   |   |   members_encoded = 7.00: Long_Series (136.0/78.0)
+|   anime_rating_encoded = 5.00
+|   |   genre_encoded = 0.00: Medium_Series (0.0)
+|   |   genre_encoded = 1.00: Short_Series (110.0/41.0)
+|   |   genre_encoded = 2.00: Medium_Series (148.0/35.0)
+|   |   genre_encoded = 3.00: Medium_Series (0.0)
+|   |   genre_encoded = 4.00: Medium_Series (45.0/1.0)
+|   |   genre_encoded = 5.00: Medium_Series (10.0)
+|   |   genre_encoded = 6.00: Medium_Series (0.0)
+|   |   genre_encoded = 7.00
+|   |   |   members_encoded = 1.00: Short_Series (0.0)
+|   |   |   members_encoded = 2.00: Short_Series (0.0)
+|   |   |   members_encoded = 3.00: Short_Series (0.0)
+|   |   |   members_encoded = 4.00: Medium_Series (3.0)
+|   |   |   members_encoded = 5.00: Medium_Series (19.0/7.0)
+|   |   |   members_encoded = 6.00: Short_Series (78.0/21.0)
+|   |   |   members_encoded = 7.00: Long_Series (109.0/54.0)
+|   |   genre_encoded = 8.00: Medium_Series (60.0/20.0)
+|   |   genre_encoded = 9.00: Short_Series (34.0/8.0)
+|   anime_rating_encoded = 6.00
+|   |   genre_encoded = 0.00: Medium_Series (0.0)
+|   |   genre_encoded = 1.00: Medium_Series (27.0)
+|   |   genre_encoded = 2.00
+|   |   |   members_encoded = 1.00: Medium_Series (0.0)
+|   |   |   members_encoded = 2.00: Medium_Series (0.0)
+|   |   |   members_encoded = 3.00: Medium_Series (0.0)
+|   |   |   members_encoded = 4.00: Short_Series (1.0)
+|   |   |   members_encoded = 5.00: Long_Series (3.0)
+|   |   |   members_encoded = 6.00: Very_Long_Series (6.0)
+|   |   |   members_encoded = 7.00: Medium_Series (22.0)
+|   |   genre_encoded = 3.00: Medium_Series (0.0)
+|   |   genre_encoded = 4.00: Medium_Series (0.0)
+|   |   genre_encoded = 5.00: Medium_Series (0.0)
+|   |   genre_encoded = 6.00: Medium_Series (0.0)
+|   |   genre_encoded = 7.00: Very_Long_Series (11.0)
+|   |   genre_encoded = 8.00: Medium_Series (0.0)
+|   |   genre_encoded = 9.00: Long_Series (29.0)
+type = Special
+|   genre_encoded = 0.00
+|   |   anime_rating_encoded = 0.00: Short_Series (0.0)
+|   |   anime_rating_encoded = 1.00: Short_Series (0.0)
+|   |   anime_rating_encoded = 2.00: Short_Series (0.0)
+|   |   anime_rating_encoded = 3.00: Movie/Special (8.0/1.0)
+|   |   anime_rating_encoded = 4.00: Short_Series (6.0)
+|   |   anime_rating_encoded = 5.00: Short_Series (0.0)
+|   |   anime_rating_encoded = 6.00: Short_Series (0.0)
+|   genre_encoded = 1.00: Movie/Special (104.0/40.0)
+|   genre_encoded = 2.00: Movie/Special (72.0/17.0)
+|   genre_encoded = 3.00: Movie/Special (0.0)
+|   genre_encoded = 4.00: Movie/Special (38.0/5.0)
+|   genre_encoded = 5.00: Movie/Special (9.0/3.0)
+|   genre_encoded = 6.00
+|   |   anime_rating_encoded = 0.00: Short_Series (0.0)
+|   |   anime_rating_encoded = 1.00: Short_Series (0.0)
+|   |   anime_rating_encoded = 2.00: Short_Series (12.0/1.0)
+|   |   anime_rating_encoded = 3.00: Short_Series (55.0/21.0)
+|   |   anime_rating_encoded = 4.00
+|   |   |   members_encoded = 1.00: Movie/Special (0.0)
+|   |   |   members_encoded = 2.00: Short_Series (3.0)
+|   |   |   members_encoded = 3.00: Movie/Special (0.0)
+|   |   |   members_encoded = 4.00: Movie/Special (7.0)
+|   |   |   members_encoded = 5.00: Movie/Special (0.0)
+|   |   |   members_encoded = 6.00: Movie/Special (0.0)
+|   |   |   members_encoded = 7.00: Movie/Special (0.0)
+|   |   anime_rating_encoded = 5.00: Short_Series (0.0)
+|   |   anime_rating_encoded = 6.00: Short_Series (0.0)
+|   genre_encoded = 7.00
+|   |   members_encoded = 1.00
+|   |   |   user_rating_encoded = 0: Movie/Special (7.0/2.0)
+|   |   |   user_rating_encoded = 1: Movie/Special (0.0)
+|   |   |   user_rating_encoded = 2: Short_Series (3.0)
+|   |   |   user_rating_encoded = 3: Movie/Special (6.0/1.0)
+|   |   |   user_rating_encoded = 4: Short_Series (1.0)
+|   |   |   user_rating_encoded = 5: Movie/Special (0.0)
+|   |   members_encoded = 2.00
+|   |   |   anime_rating_encoded = 0.00: Short_Series (0.0)
+|   |   |   anime_rating_encoded = 1.00: Short_Series (0.0)
+|   |   |   anime_rating_encoded = 2.00: Short_Series (16.0/5.0)
+|   |   |   anime_rating_encoded = 3.00: Short_Series (58.0/29.0)
+|   |   |   anime_rating_encoded = 4.00: Movie/Special (17.0/5.0)
+|   |   |   anime_rating_encoded = 5.00: Short_Series (0.0)
+|   |   |   anime_rating_encoded = 6.00: Short_Series (0.0)
+|   |   members_encoded = 3.00: Movie/Special (83.0/32.0)
+|   |   members_encoded = 4.00
+|   |   |   user_rating_encoded = 0
+|   |   |   |   anime_rating_encoded = 0.00: Short_Series (0.0)
+|   |   |   |   anime_rating_encoded = 1.00: Short_Series (0.0)
+|   |   |   |   anime_rating_encoded = 2.00: Short_Series (0.0)
+|   |   |   |   anime_rating_encoded = 3.00: Movie/Special (7.0/2.0)
+|   |   |   |   anime_rating_encoded = 4.00: Short_Series (10.0/2.0)
+|   |   |   |   anime_rating_encoded = 5.00: Short_Series (0.0)
+|   |   |   |   anime_rating_encoded = 6.00: Short_Series (0.0)
+|   |   |   user_rating_encoded = 1: Movie/Special (0.0)
+|   |   |   user_rating_encoded = 2: Movie/Special (4.0/1.0)
+|   |   |   user_rating_encoded = 3: Movie/Special (8.0/1.0)
+|   |   |   user_rating_encoded = 4: Movie/Special (20.0/5.0)
+|   |   |   user_rating_encoded = 5: Movie/Special (5.0/1.0)
+|   |   members_encoded = 5.00
+|   |   |   anime_rating_encoded = 0.00: Short_Series (0.0)
+|   |   |   anime_rating_encoded = 1.00: Short_Series (0.0)
+|   |   |   anime_rating_encoded = 2.00: Short_Series (0.0)
+|   |   |   anime_rating_encoded = 3.00: Movie/Special (8.0)
+|   |   |   anime_rating_encoded = 4.00: Short_Series (15.0)
+|   |   |   anime_rating_encoded = 5.00: Short_Series (0.0)
+|   |   |   anime_rating_encoded = 6.00: Short_Series (0.0)
+|   |   members_encoded = 6.00: Movie/Special (0.0)
+|   |   members_encoded = 7.00: Movie/Special (0.0)
+|   genre_encoded = 8.00: Movie/Special (23.0/5.0)
+|   genre_encoded = 9.00: Movie/Special (91.0/21.0)
+type = Music: Movie/Special (33.0/1.0)
+type = Movie: Movie/Special (1329.0/18.0)
+type = OVA
+|   anime_rating_encoded = 0.00: Movie/Special (2.0)
+|   anime_rating_encoded = 1.00
+|   |   genre_encoded = 0.00: Short_Series (0.0)
+|   |   genre_encoded = 1.00: Short_Series (0.0)
+|   |   genre_encoded = 2.00: Short_Series (0.0)
+|   |   genre_encoded = 3.00: Short_Series (0.0)
+|   |   genre_encoded = 4.00: Short_Series (0.0)
+|   |   genre_encoded = 5.00: Short_Series (0.0)
+|   |   genre_encoded = 6.00: Short_Series (0.0)
+|   |   genre_encoded = 7.00: Short_Series (3.0)
+|   |   genre_encoded = 8.00: Movie/Special (2.0)
+|   |   genre_encoded = 9.00: Short_Series (1.0)
+|   anime_rating_encoded = 2.00
+|   |   members_encoded = 1.00
+|   |   |   genre_encoded = 0.00: Movie/Special (1.0)
+|   |   |   genre_encoded = 1.00: Movie/Special (1.0)
+|   |   |   genre_encoded = 2.00: Short_Series (10.0/4.0)
+|   |   |   genre_encoded = 3.00: Short_Series (40.0/7.0)
+|   |   |   genre_encoded = 4.00: Movie/Special (7.0/2.0)
+|   |   |   genre_encoded = 5.00: Movie/Special (2.0)
+|   |   |   genre_encoded = 6.00: Movie/Special (1.0)
+|   |   |   genre_encoded = 7.00: Short_Series (15.0/7.0)
+|   |   |   genre_encoded = 8.00: Short_Series (1.0)
+|   |   |   genre_encoded = 9.00: Movie/Special (4.0/1.0)
+|   |   members_encoded = 2.00
+|   |   |   user_rating_encoded = 0: Movie/Special (13.0/3.0)
+|   |   |   user_rating_encoded = 1: Short_Series (3.0/1.0)
+|   |   |   user_rating_encoded = 2: Movie/Special (3.0/1.0)
+|   |   |   user_rating_encoded = 3: Short_Series (16.0/6.0)
+|   |   |   user_rating_encoded = 4: Movie/Special (4.0/1.0)
+|   |   |   user_rating_encoded = 5: Movie/Special (1.0)
+|   |   members_encoded = 3.00
+|   |   |   genre_encoded = 0.00: Movie/Special (0.0)
+|   |   |   genre_encoded = 1.00: Movie/Special (0.0)
+|   |   |   genre_encoded = 2.00: Movie/Special (0.0)
+|   |   |   genre_encoded = 3.00: Movie/Special (5.0)
+|   |   |   genre_encoded = 4.00: Short_Series (6.0)
+|   |   |   genre_encoded = 5.00: Movie/Special (0.0)
+|   |   |   genre_encoded = 6.00: Movie/Special (0.0)
+|   |   |   genre_encoded = 7.00: Movie/Special (12.0/2.0)
+|   |   |   genre_encoded = 8.00: Movie/Special (0.0)
+|   |   |   genre_encoded = 9.00: Movie/Special (0.0)
+|   |   members_encoded = 4.00: Movie/Special (7.0)
+|   |   members_encoded = 5.00: Short_Series (0.0)
+|   |   members_encoded = 6.00: Short_Series (0.0)
+|   |   members_encoded = 7.00: Short_Series (0.0)
+|   anime_rating_encoded = 3.00
+|   |   genre_encoded = 0.00: Short_Series (2.0)
+|   |   genre_encoded = 1.00: Movie/Special (43.0/7.0)
+|   |   genre_encoded = 2.00
+|   |   |   members_encoded = 1.00: Short_Series (14.0/3.0)
+|   |   |   members_encoded = 2.00: Short_Series (38.0/10.0)
+|   |   |   members_encoded = 3.00: Movie/Special (29.0/14.0)
+|   |   |   members_encoded = 4.00: Movie/Special (14.0/5.0)
+|   |   |   members_encoded = 5.00: Short_Series (0.0)
+|   |   |   members_encoded = 6.00: Short_Series (0.0)
+|   |   |   members_encoded = 7.00: Short_Series (0.0)
+|   |   genre_encoded = 3.00: Short_Series (48.0/8.0)
+|   |   genre_encoded = 4.00
+|   |   |   members_encoded = 1.00: Movie/Special (3.0)
+|   |   |   members_encoded = 2.00: Short_Series (16.0/1.0)
+|   |   |   members_encoded = 3.00: Movie/Special (17.0/7.0)
+|   |   |   members_encoded = 4.00: Short_Series (0.0)
+|   |   |   members_encoded = 5.00: Short_Series (0.0)
+|   |   |   members_encoded = 6.00: Short_Series (0.0)
+|   |   |   members_encoded = 7.00: Short_Series (0.0)
+|   |   genre_encoded = 5.00: Movie/Special (5.0/1.0)
+|   |   genre_encoded = 6.00: Short_Series (3.0/1.0)
+|   |   genre_encoded = 7.00
+|   |   |   members_encoded = 1.00: Short_Series (6.0/2.0)
+|   |   |   members_encoded = 2.00: Short_Series (76.0/34.0)
+|   |   |   members_encoded = 3.00: Movie/Special (69.0/30.0)
+|   |   |   members_encoded = 4.00: Short_Series (23.0/1.0)
+|   |   |   members_encoded = 5.00: Short_Series (22.0/8.0)
+|   |   |   members_encoded = 6.00: Short_Series (0.0)
+|   |   |   members_encoded = 7.00: Short_Series (0.0)
+|   |   genre_encoded = 8.00: Movie/Special (7.0/3.0)
+|   |   genre_encoded = 9.00
+|   |   |   user_rating_encoded = 0: Movie/Special (11.0/5.0)
+|   |   |   user_rating_encoded = 1: Short_Series (0.0)
+|   |   |   user_rating_encoded = 2: Short_Series (3.0)
+|   |   |   user_rating_encoded = 3: Movie/Special (16.0/5.0)
+|   |   |   user_rating_encoded = 4: Short_Series (12.0/4.0)
+|   |   |   user_rating_encoded = 5: Short_Series (5.0/1.0)
+|   anime_rating_encoded = 4.00
+|   |   members_encoded = 1.00: Medium_Series (1.0)
+|   |   members_encoded = 2.00: Movie/Special (53.0/22.0)
+|   |   members_encoded = 3.00: Short_Series (113.0/35.0)
+|   |   members_encoded = 4.00
+|   |   |   genre_encoded = 0.00: Movie/Special (0.0)
+|   |   |   genre_encoded = 1.00: Movie/Special (16.0/2.0)
+|   |   |   genre_encoded = 2.00: Movie/Special (9.0/2.0)
+|   |   |   genre_encoded = 3.00: Movie/Special (0.0)
+|   |   |   genre_encoded = 4.00: Movie/Special (5.0)
+|   |   |   genre_encoded = 5.00: Movie/Special (0.0)
+|   |   |   genre_encoded = 6.00: Movie/Special (0.0)
+|   |   |   genre_encoded = 7.00: Short_Series (82.0/41.0)
+|   |   |   genre_encoded = 8.00: Movie/Special (0.0)
+|   |   |   genre_encoded = 9.00: Short_Series (9.0/2.0)
+|   |   members_encoded = 5.00: Short_Series (51.0/18.0)
+|   |   members_encoded = 6.00: Short_Series (17.0)
+|   |   members_encoded = 7.00: Short_Series (0.0)
+|   anime_rating_encoded = 5.00: Short_Series (19.0/1.0)
+|   anime_rating_encoded = 6.00: Very_Long_Series (1.0)
+type = ONA
+|   members_encoded = 1.00
+|   |   user_rating_encoded = 0: Short_Series (8.0/2.0)
+|   |   user_rating_encoded = 1: Short_Series (2.0/1.0)
+|   |   user_rating_encoded = 2: Movie/Special (0.0)
+|   |   user_rating_encoded = 3: Movie/Special (5.0/1.0)
+|   |   user_rating_encoded = 4: Movie/Special (1.0)
+|   |   user_rating_encoded = 5: Movie/Special (0.0)
+|   members_encoded = 2.00: Short_Series (18.0/7.0)
+|   members_encoded = 3.00
+|   |   genre_encoded = 0.00: Short_Series (0.0)
+|   |   genre_encoded = 1.00: Medium_Series (2.0/1.0)
+|   |   genre_encoded = 2.00: Short_Series (0.0)
+|   |   genre_encoded = 3.00: Short_Series (0.0)
+|   |   genre_encoded = 4.00: Medium_Series (3.0)
+|   |   genre_encoded = 5.00: Short_Series (0.0)
+|   |   genre_encoded = 6.00
+|   |   |   user_rating_encoded = 0: Movie/Special (2.0)
+|   |   |   user_rating_encoded = 1: Short_Series (0.0)
+|   |   |   user_rating_encoded = 2: Short_Series (0.0)
+|   |   |   user_rating_encoded = 3: Short_Series (0.0)
+|   |   |   user_rating_encoded = 4: Short_Series (2.0)
+|   |   |   user_rating_encoded = 5: Short_Series (0.0)
+|   |   genre_encoded = 7.00: Short_Series (18.0/7.0)
+|   |   genre_encoded = 8.00: Short_Series (0.0)
+|   |   genre_encoded = 9.00: Movie/Special (3.0)
+|   members_encoded = 4.00
+|   |   genre_encoded = 0.00: Medium_Series (0.0)
+|   |   genre_encoded = 1.00: Short_Series (2.0)
+|   |   genre_encoded = 2.00: Medium_Series (9.0)
+|   |   genre_encoded = 3.00: Medium_Series (0.0)
+|   |   genre_encoded = 4.00: Medium_Series (0.0)
+|   |   genre_encoded = 5.00: Medium_Series (0.0)
+|   |   genre_encoded = 6.00
+|   |   |   anime_rating_encoded = 0.00: Medium_Series (0.0)
+|   |   |   anime_rating_encoded = 1.00: Medium_Series (0.0)
+|   |   |   anime_rating_encoded = 2.00: Medium_Series (0.0)
+|   |   |   anime_rating_encoded = 3.00: Short_Series (3.0)
+|   |   |   anime_rating_encoded = 4.00: Medium_Series (4.0)
+|   |   |   anime_rating_encoded = 5.00: Medium_Series (0.0)
+|   |   |   anime_rating_encoded = 6.00: Medium_Series (0.0)
+|   |   genre_encoded = 7.00: Medium_Series (2.0)
+|   |   genre_encoded = 8.00: Medium_Series (0.0)
+|   |   genre_encoded = 9.00: Medium_Series (0.0)
+|   members_encoded = 5.00
+|   |   genre_encoded = 0.00: Long_Series (0.0)
+|   |   genre_encoded = 1.00: Short_Series (8.0)
+|   |   genre_encoded = 2.00: Long_Series (0.0)
+|   |   genre_encoded = 3.00: Long_Series (0.0)
+|   |   genre_encoded = 4.00: Long_Series (10.0)
+|   |   genre_encoded = 5.00: Long_Series (0.0)
+|   |   genre_encoded = 6.00: Long_Series (0.0)
+|   |   genre_encoded = 7.00: Long_Series (0.0)
+|   |   genre_encoded = 8.00: Long_Series (0.0)
+|   |   genre_encoded = 9.00: Long_Series (0.0)
+|   members_encoded = 6.00: Short_Series (0.0)
+|   members_encoded = 7.00: Short_Series (0.0)
+
+Number of Leaves  : 	313
+
+Size of the tree : 	360
+
+
+Time taken to build model: 0.18 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+=== Summary ===
+
+Correctly Classified Instances        7026               70.26   %
+Incorrectly Classified Instances      2974               29.74   %
+Kappa statistic                          0.5318
+Mean absolute error                      0.1552
+Root mean squared error                  0.2823
+Relative absolute error                 57.23   %
+Root relative squared error             76.677  %
+Total Number of Instances            10000     
+
+=== Detailed Accuracy By Class ===
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.866    0.390    0.658      0.866    0.748      0.487    0.816     0.764     Short_Series
+                 0.374    0.052    0.680      0.374    0.483      0.408    0.836     0.612     Medium_Series
+                 0.854    0.042    0.853      0.854    0.854      0.812    0.982     0.923     Movie/Special
+                 0.338    0.016    0.572      0.338    0.425      0.413    0.886     0.452     Long_Series
+                 0.157    0.000    0.925      0.157    0.268      0.376    0.887     0.267     Very_Long_Series
+Weighted Avg.    0.703    0.203    0.708      0.703    0.680      0.534    0.863     0.734     
+
+=== Confusion Matrix ===
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 4023  254  322   46    0 |    a = Short_Series
+ 1341  855    6   84    0 |    b = Medium_Series
+  325    0 1908    0    0 |    c = Movie/Special
+  261  133    0  203    3 |    d = Long_Series
+  161   15    1   22   37 |    e = Very_Long_Series
+
