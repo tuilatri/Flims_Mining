@@ -1,0 +1,45 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     combined_data
+Instances:    10000
+Attributes:   6
+              user_rating_encoded
+              genre_encoded
+              type
+              episodes_encoded
+              anime_rating_encoded
+              members_encoded
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.1 (1000 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 18
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 14
+
+Size of set of large itemsets L(2): 49
+
+Size of set of large itemsets L(3): 46
+
+Size of set of large itemsets L(4): 14
+
+Best rules found:
+
+ 1. episodes_encoded=Short_Series 3765 ==> type=TV 3765    <conf:(1)> lift:(1.47) lev:(0.12) [1196] conv:(1196.14)
+ 2. episodes_encoded=Short_Series anime_rating_encoded=Average 2907 ==> type=TV 2907    <conf:(1)> lift:(1.47) lev:(0.09) [923] conv:(923.55)
+ 3. episodes_encoded=Short_Series members_encoded=High 2435 ==> type=TV 2435    <conf:(1)> lift:(1.47) lev:(0.08) [773] conv:(773.6)
+ 4. episodes_encoded=Medium_Series 2224 ==> type=TV 2224    <conf:(1)> lift:(1.47) lev:(0.07) [706] conv:(706.56)
+ 5. user_rating_encoded=High episodes_encoded=Short_Series 1775 ==> type=TV 1775    <conf:(1)> lift:(1.47) lev:(0.06) [563] conv:(563.92)
+ 6. episodes_encoded=Short_Series anime_rating_encoded=Average members_encoded=High 1713 ==> type=TV 1713    <conf:(1)> lift:(1.47) lev:(0.05) [544] conv:(544.22)
+ 7. episodes_encoded=Medium_Series members_encoded=High 1662 ==> type=TV 1662    <conf:(1)> lift:(1.47) lev:(0.05) [528] conv:(528.02)
+ 8. genre_encoded=Comedy episodes_encoded=Short_Series 1502 ==> type=TV 1502    <conf:(1)> lift:(1.47) lev:(0.05) [477] conv:(477.19)
+ 9. genre_encoded=Action episodes_encoded=Short_Series 1461 ==> type=TV 1461    <conf:(1)> lift:(1.47) lev:(0.05) [464] conv:(464.16)
+10. user_rating_encoded=High episodes_encoded=Medium_Series 1332 ==> type=TV 1332    <conf:(1)> lift:(1.47) lev:(0.04) [423] conv:(423.18)
+
