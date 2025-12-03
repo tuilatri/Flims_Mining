@@ -1,0 +1,14 @@
+TOP 10 ASSOCIATION RULES (Sorted by Lift)
+================================================================================
+
+                                                                           antecedents                                                                     consequents  support  confidence     lift
+1        episodes_encoded=Movie/Special, genre_encoded=Adventure, members_encoded=High                                           type=Movie, anime_rating_encoded=High   0.0126      0.8344  15.0079
+2   episodes_encoded=Movie/Special, anime_rating_encoded=High, genre_encoded=Adventure                                                type=Movie, members_encoded=High   0.0126      0.7368  13.8244
+3                       type=Movie, anime_rating_encoded=High, genre_encoded=Adventure                            episodes_encoded=Movie/Special, members_encoded=High   0.0126      0.8344  11.2610
+4                            type=Movie, genre_encoded=Adventure, members_encoded=High                       anime_rating_encoded=High, episodes_encoded=Movie/Special   0.0126      0.8811  11.0554
+5                                                type=Movie, anime_rating_encoded=High  episodes_encoded=Movie/Special, user_rating_encoded=High, members_encoded=High   0.0249      0.4478  10.4636
+6       episodes_encoded=Movie/Special, user_rating_encoded=High, members_encoded=High                                           type=Movie, anime_rating_encoded=High   0.0249      0.5818  10.4636
+7                           type=Movie, user_rating_encoded=High, members_encoded=High                       anime_rating_encoded=High, episodes_encoded=Movie/Special   0.0249      0.8111  10.1766
+8                            anime_rating_encoded=High, episodes_encoded=Movie/Special                      type=Movie, user_rating_encoded=High, members_encoded=High   0.0249      0.3124  10.1766
+9                                 episodes_encoded=Movie/Special, members_encoded=High                 type=Movie, anime_rating_encoded=High, user_rating_encoded=High   0.0249      0.3360   9.8833
+10                     type=Movie, anime_rating_encoded=High, user_rating_encoded=High                            episodes_encoded=Movie/Special, members_encoded=High   0.0249      0.7324   9.8833
