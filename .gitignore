@@ -3,9 +3,6 @@ dataset/raw/
 
 # Ignore dataset
 dataset/
-pre-processing/pre-processing-20-done-advanced - Copy
-pre-processing/pre-processing-21-done-simple - Copy
-branches/
 
 # Ignore notebook checkpoint files
 .pre-processing/.ipynb_checkpoints/
