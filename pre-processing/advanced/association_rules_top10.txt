@@ -1,0 +1,14 @@
+TOP 10 ASSOCIATION RULES (Sorted by Lift)
+================================================================================
+
+                                                       antecedents                                                   consequents  support  confidence       lift
+1923                          type_Movie, anime_rating_encoded_5.0           members_encoded_6.0, episodes_encoded_Movie/Special   0.0210    0.385321  15.727392
+1924           members_encoded_6.0, episodes_encoded_Movie/Special                          type_Movie, anime_rating_encoded_5.0   0.0210    0.857143  15.727392
+2558           members_encoded_7.0, episodes_encoded_Medium_Series          anime_rating_encoded_5.0, genre_encoded_4.0, type_TV   0.0117    0.323204  14.825891
+2554          anime_rating_encoded_5.0, genre_encoded_4.0, type_TV           members_encoded_7.0, episodes_encoded_Medium_Series   0.0117    0.536697  14.825891
+2559                   genre_encoded_4.0, anime_rating_encoded_5.0  members_encoded_7.0, episodes_encoded_Medium_Series, type_TV   0.0117    0.460630  12.724583
+1318           members_encoded_7.0, episodes_encoded_Medium_Series                   genre_encoded_4.0, anime_rating_encoded_5.0   0.0117    0.323204  12.724583
+1317                   genre_encoded_4.0, anime_rating_encoded_5.0           members_encoded_7.0, episodes_encoded_Medium_Series   0.0117    0.460630  12.724583
+2550  members_encoded_7.0, episodes_encoded_Medium_Series, type_TV                   genre_encoded_4.0, anime_rating_encoded_5.0   0.0117    0.323204  12.724583
+1922                               type_Movie, members_encoded_6.0      anime_rating_encoded_5.0, episodes_encoded_Movie/Special   0.0210    0.981308  12.500744
+1962                            type_OVA, anime_rating_encoded_3.0           episodes_encoded_Movie/Special, members_encoded_2.0   0.0126    0.470149  10.287730
