@@ -7,7 +7,7 @@ public class Apriori_Classification {
     public static void main(String[] args) {
         try {
             // Load data
-            DataSource source = new DataSource("../pre-processing-21/combined-cleaned.arff");
+            DataSource source = new DataSource("../../dataset/initial/combined-cleaned.arff");
             Instances data = source.getDataSet();
 
             // No class index for Apriori (or -c -1 handles it)

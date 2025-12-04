@@ -8,7 +8,7 @@ public class K_Means_Classification {
     public static void main(String[] args) {
         try {
             // Load data
-            DataSource source = new DataSource("../pre-processing-20/combined-cleaned.arff");
+            DataSource source = new DataSource("../../dataset/advanced/combined-cleaned.arff");
             Instances data = source.getDataSet();
 
             // Unset class index for clustering (use all attributes)
